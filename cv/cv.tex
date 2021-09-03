@@ -1,0 +1,185 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
+\urlstyle{rm}
+\newcommand{\textapprox}{\raisebox{0.5ex}{\texttildelow}}
+\newcommand{\B}[1]{\textbf{#1}}
+\newcommand{\pub}[1]{\textrm{\textit{#1}}}
+
+\name{Zhihao Xia} % Your name
+% \address{Computer Science and Engineering Department, Washington University in St. Louis} % Your address
+\address{\href{mailto:zhihao.xia@wustl.edu}{zhihao.xia@wustl.edu} \\ \url{https://www.cse.wustl.edu/~zhihao.xia}} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   RESEARCH INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research interests}
+My research interests include computer vision, computational photography, and machine learning. I am particularly interested in building methods that can recover different aspects of visual appearance (geometry, light, colors, etc.) from images, by using both physics-based reasoning and machine learning.
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Washington University in St. Louis} \hfill {\em Sep 2017 - Jun 2021} \\ 
+Ph.D. in Computer Science \& Engineering~~~~~~~~Advisor: Ayan Chakrabarti \\
+
+{\bf University of Science and Technology of China} \hfill {\em Sep 2013 - Jun 2017} \\ 
+B.S. in Computer Science, School of the Gifted Young \\
+% Overall GPA: 3.52/4.3 \\
+Honor: National Scholarship (Top 2\%)
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Experience}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Adobe}{Jun 2021 - Present}{Research Scientist}{CA, USA}
+\item Using computational photography and machine leanring to build next-gen camera for mobile devices.
+
+\end{rSubsection}
+
+
+%------------------------------------------------
+
+\begin{rSubsection}{Google Research}{May 2020 - Dec 2020}{Research Intern}{WA, USA}
+\item Worked with Supreeth Achar and Jason Lawrence on face relighting and normal estimation under challenging visible light environments by supplementing a near-infared image.
+
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Adobe Research}{May 2019 - Aug 2019}{Research Intern}{CA, USA}
+\item Worked with Federico Perazzi, Micha\"el Gharbi, Kalyan Sunkavalli on Basis Prediction Networks.
+\item Research was transferred into products and published in CVPR 2020.
+
+\end{rSubsection}
+
+%------------------------------------------------
+\begin{rSubsection}{Washington University in St. Louis}{Sep 2017 - Jun 2021}{Research Assistant}{MO, USA}
+\item Member of WashU vision and learning group directed by Prof. Ayan Chakrabarti.
+\item Computer Vision, Computational Photography and Deep Learning.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{King Abdullah University of Science and Technology }{Jan 2017 - May 2017}{Visiting Student Researcher}{Jeddah, SAU}
+\item Worked with Prof. Xin Gao on recognition of polyadenylation signal (PAS) in human and mouse genes with CNN.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{National University of Singapore}{July 2016 - Nov 2016}{Visiting Student Researcher}{Singapore}
+\item Worked with Prof. Richard Ma on investigating Internet topology with Multiple Hidden Markov Chains.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{University of Science and Technology of China}{June 2015 - June 2016}{Undergraduate Research Assistant}{Hefei, China}
+\item Topic diffusion analytics in social media based on machine learning.
+\end{rSubsection}
+
+\end{rSection}
+
+\clearpage
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%   PUBLICATION SECTION
+%----------------------------------------------------------------------------------------
+\sectionskip
+\MakeUppercase{\bf Publication} % Section title
+\sectionlineskip
+\hrule % Horizontal line
+
+% \B{Refereed}
+\begin{enumerate}
+\item \B{Zhihao Xia}, Jason Lawrence, Supreeth Achar. ``A Dark Flash Normal Camera'', \pub{ICCV}, 2021.
+\item \B{Zhihao Xia}, Micha\"el Gharbi, Federico Perazzi, Kalyan Sunkavalli, Ayan Chakrabarti. ``Deep Denoising of Flash and No-Flash Pairs for Photography in Low-Light Environments'', \pub{CVPR}, 2021.
+\item \B{Zhihao Xia}, Federico Perazzi, Micha\"el Gharbi, Kalyan Sunkavalli, Ayan Chakrabarti. ``Basis Prediction Networks for Effective Burst Denoising with Large Kernels'', \pub{CVPR}, 2020.
+\item \B{Zhihao Xia}, Patrick Sullivan, Ayan Chakrabarti. ``Generating and Exploiting Probabilistic Monocular Depth Estimates'', \pub{CVPR}, 2020 \B{(Oral)}.
+\item \B{Zhihao Xia} and Ayan Chakrabarti. ``Identifying Recurring Patterns with Deep Neural Networks for Natural Image Denoising'', \pub{WACV}, 2020.
+\item \B{Zhihao Xia} and Ayan Chakrabarti. ``Training Image Estimators without Image Ground-Truth'', \pub{NeurIPS}, 2019 \B{(Spotlight)}
+\item \B{Zhihao Xia}, Yu Li, Bin Zhang, Yuhui Hu, Wei Chen and Xin Gao. ``DeeReCT-PolyA: a robust and generic deep learning method for PAS identification'', \pub{Bioinformatics}, 2018.
+\item Yu Sun, \B{Zhihao Xia} and Ulugbek S. Kamilov. ``Efficient and accurate inversion of multiple scattering with deep learning'', \pub{Optics express} 26(11): 14678-14688, 2018.
+\end{enumerate}
+
+% \B{Preprints}
+% \begin{enumerate}
+% \setcounter{enumi}{6}
+% \end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%   TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+% \vspace{-1em}
+Python: Numpy, Tensorflow, PyTorch. C/C++. Matlab
+\end{rSection}
+
+\sectionskip
+\MakeUppercase{\bf Service} % Section title
+\sectionlineskip
+\hrule % Horizontal line
+
+\begin{itemize}
+\item Reviewer for IJCV, CVPR (2021), ICCV (2021, 2019), IJCAI (2021, SPC), WACV (2020)\\
+\vspace{-1em}
+\item Assistant to Instructor, WashU Fall 2018 CSE 559A: Computer Vision. Developed and held recitation lectures, assisted with grading, staffed office hours to assist students\\
+\vspace{-1em}
+\item Co-organizor: WashU CS Graphics, Vision, and Imaging Seminar, Fall 2019 and Spring 2020
+\end{itemize}
+
+% \begin{rSection}{References}
+
+% Available on request.
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

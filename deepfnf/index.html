@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>DeepFnF</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+               Deep Denoising of Flash and No-Flash Pairs for</br> Photography in Low-Light Environments</br>
+                <small>
+                    CVPR 2021
+                </small>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://www.cse.wustl.edu/~zhihao.xia/">
+                          Zhihao Xia
+                        </a>
+                        </br>WUSTL
+                    </li>
+                    <li>
+                        <a href="https://www.mgharbi.com/">
+                          Micha&euml;l Gharbi
+                        </a>
+                        </br>Adobe Research
+                    </li>
+                    <li>
+                        <a href="https://fperazzi.github.io/">
+                            Federico Perazzi
+                        </a>
+                        </br>Facebook
+                    </li>
+                    <li>
+                        <a href="https://www.kalyans.org/">
+                          Kalyan Sunkavalli
+                        </a>
+                        </br>Adobe Research
+                    </li>
+                    <li>
+                          <a href="https://projects.ayanc.org/">
+                          Ayan Chakrabarti
+                        </a>
+                        </br>WUSTL
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/pdf/2012.05116.pdf">
+                            <image src="paper.jpg" height="120px"><br>
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/2n4eY66JO5s">
+                            <image src="youtube_icon.png" height="120px"><br>
+                                <h4><strong>Technical Video</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/likesum/deepFnF">
+                            <image src="github_icon.png" height="120px"><br>
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Example Results
+                </h3>
+                <img src="teaser.png" style="max-width:100%"> 
+            </div>
+        </div>
+
+
+<!--         <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Links
+                </h3>
+            </div>
+        </div> -->
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Overview
+                </h3>
+                <p class="text-justify">
+                  We introduce a neural network-based method to denoise pairs of images taken in quick succession in low-light environments, with and without a flash. Our goal is to produce a high-quality rendering of the scene that preserves the color and mood from the ambient illumination of the noisy no-flash image, while recovering surface texture and detail revealed by the flash. Our network outputs a gain map and a field of kernels, the latter obtained by linearly mixing elements of a per-image low-rank kernel basis. We first apply the kernel field to the no-flash image, and then multiply the result with the gain map to create the final output. We show our network effectively learns to produce high-quality images by combining a smoothed out estimate of the scene's ambient appearance from the no-flash image, with high-frequency albedo details extracted from the flash input. Our experiments show significant improvements over alternative captures without a flash, and baseline denoisers that use flash no-flash pairs. In particular, our method produces images that are both noise-free and contain accurate ambient colors without the sharp shadows or strong specular highlights visible in the flash image.
+                </p>
+                <image src="overview.jpg" class="img-responsive" alt="overview"><br>
+            </div>
+        </div>
+
+
+<!--         <div class="row" id="header_img">
+            <figure class="col-md-8 col-md-offset-2">
+                <image src="img/llff_teaser.png" class="img-responsive" alt="overview">
+                <figcaption>
+                </figcaption>
+            </figure>
+
+        </div> -->
+
+<!--         <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Technical Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe align="center" width="100%" height="422" src="https://www.youtube.com/embed/LY6MgDUzS3M" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/jFubeqxJO6U" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    BibTeX
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@InProceedings{deepfnf2021,
+    author={Zhihao Xia and Micha{\"e}l Gharbi and Federico Perazzi and Kalyan Sunkavalli and Ayan Chakrabarti}
+    title     = {Deep Denoising of Flash and No-Flash Pairs for Photography in Low-Light Environments},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {2063-2072}
+}
+</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                ZX and AC acknowledge support from the National Science Foundation under award no. <a class="author" href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1820693">IIS-1820693</a>, and from a generous gift funding from Adobe Research. The website template was borrowed from <a href="http://mgharbi.com/">Micha&euml;l Gharbi</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
