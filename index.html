@@ -85,6 +85,40 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <!-- hsdepth -->
+              <tr onmouseout="hsdepth_stop()" onmouseover="hsdepth_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='hsdepth_image'><img src='handshake_depth/after.jpg' width="100%"></div>
+                    <img src='handshake_depth/before.jpg' width="100%">
+                  </div>
+                  <script type="text/javascript">
+                    function hsdepth_start() {
+                      document.getElementById('hsdepth_image').style.opacity = "1";
+                    }
+                    function hsdepth_stop() {
+                      document.getElementById('hsdepth_image').style.opacity = "0";
+                    }
+                    hsdepth_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://light.princeton.edu/publication/hndr/">
+                    <papertitle>Handheld Multi-Frame Neural Depth Refinement</papertitle>
+                  </a>
+                  <br>
+                  Ilya Chugunov, Yuxuan Zhang, <strong><span style="font-size: 15px">Zhihao Xia</span></strong>, Xuaner
+                  (Cecilia) Zhang, Jiawen Chen, Felix Heide<br>
+                  <em>CVPR</em>, 2022 <br>
+                  <a href="https://light.princeton.edu/publication/hndr/">project page</a> /
+                  <a href="https://arxiv.org/abs/2111.13738">arxiv</a> /
+                  <a href="https://github.com/princeton-computational-imaging/HNDR">code</a>
+                  <p></p>
+                  <p>High-fidelty depth recovery for tabletop objects from a single smartphone shot.
+                  </p>
+                </td>
+              </tr>
+
               <!-- dfnc -->
               <tr onmouseout="dfnc_stop()" onmouseover="dfnc_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -115,9 +149,8 @@
                   <a href="https://arxiv.org/abs/2012.06125">arxiv</a> /
                   <a href="https://youtu.be/RboGUBqYQec">video</a>
                   <p></p>
-                  <p>Estimating surface normal and reflectance maps of people under uncontrolled and challenging visible
-                    lighting, by supplementing the available visible illumination with a controlled single near infrared
-                    (NIR) light source and camera, i.e., a "dark flash image". </p>
+                  <p>Face surface normal and reflectance estimation under uncontrolled visible
+                    lighting with a "dark flash image". </p>
                 </td>
               </tr>
 
@@ -195,8 +228,8 @@
                   <a href="https://github.com/likesum/bpn/">code</a> /
                   <a href="https://youtu.be/jFubeqxJO6U">video</a>
                   <p></p>
-                  <p>We introduce a novel basis prediction network that predicts a set of global basis kernels and the
-                    corresponding per-pixel mixing coefficients to denoise noisy bursts from cellphone cameras.</p>
+                  <p>A basis prediction network that predicts global basis kernels and
+                    corresponding per-pixel coefficients for burst denoising.</p>
                 </td>
               </tr>
 
@@ -232,8 +265,7 @@
                   <a href="https://github.com/likesum/prdepth/">code</a> /
                   <a href="https://youtu.be/lNw9326KSlU">video</a>
                   <p></p>
-                  <p>Propose a common model that is only trained once for a variety of depth applications, including
-                    monocular depth estimation, depth estimation with user interaction, depth completion, etc.</p>
+                  <p>A common model that is only trained once for a variety of monocular depth applications.</p>
                 </td>
               </tr>
 
@@ -268,8 +300,7 @@
                   <a href="https://arxiv.org/abs/1806.05229">arxiv</a> /
                   <a href="https://github.com/ayanc/rpcnn/">code</a>
                   <p></p>
-                  <p>Exploit self-similarity or recurring patterns (internal statistics) with deep neural networks
-                    (external statistics) for natural image denoising.</p>
+                  <p>Image denoising by using DNN to exploit self-similarity in natural images.</p>
                 </td>
               </tr>
 
@@ -303,8 +334,8 @@
                   <a href="https://arxiv.org/abs/1906.05775">arxiv</a> /
                   <a href="https://github.com/likesum/unsupimg/">code</a>
                   <p></p>
-                  <p>Introduce an unsupervised framework for training image estimation networks, from only degraded or
-                    partial measurements, but no ground-truth and even no measurement parameter (e.g., blurring kernel).
+                  <p>Unsupervised framework for training image estimation networks from only degraded or
+                    partial measurements.
                   </p>
                 </td>
               </tr>
@@ -367,7 +398,7 @@
                   Ulugbek S. Kamilov <br>
                   <em>Optics Express</em>, 2018 <br>
                   <p></p>
-                  <p>Propose a deep convolutional neural network for image reconstruction under multiple light
+                  <p>A deep convolutional neural network for image reconstruction under multiple light
                     scattering.</p>
                 </td>
               </tr>

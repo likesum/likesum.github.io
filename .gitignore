@@ -56,3 +56,5 @@ latex.out/
 # algorithms
 *.alg
 *.loa
+
+.DS_Store
