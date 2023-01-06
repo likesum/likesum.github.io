@@ -86,6 +86,43 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <!-- neuralisp -->
+              <tr onmouseout="neuralisp_stop()" onmouseover="neuralisp_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='neuralisp_image'><img src='neural_isp/before.jpg' width="100%"></div>
+                    <img src='neural_isp/before.jpg' width="100%">
+                  </div>
+                  <script type="text/javascript">
+                    function neuralisp_start() {
+                      document.getElementById('neuralisp_image').style.opacity = "1";
+                    }
+                    function neuralisp_stop() {
+                      document.getElementById('neuralisp_image').style.opacity = "0";
+                    }
+                    neuralisp_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://light.princeton.edu/publication/neural-photo-finishing/">
+                    <papertitle>Neural Photo-Finishing</papertitle>
+                  </a>
+                  <br>
+                  Ethan Tseng, Yuxuan Zhang, Lars Jebe, Xuaner
+                  (Cecilia) Zhang, <strong><span style="font-size: 15px">Zhihao Xia</span></strong>, Yifei Fan,
+                  <br>FelixHeide*, Jiawen Chen*<br>
+                  <em>SIGGRAPH Asia</em>, 2022 <br>
+                  <a href="https://light.princeton.edu/publication/neural-photo-finishing/">project page</a> /
+                  <a href="https://openreview.net/pdf?id=a60XE_dEnuO">paper</a> /
+                  <a
+                    href="https://light.cs.princeton.edu/wp-content/uploads/2022/11/Neural_Photo-Finishing_Supplementary_Information.pdf">supplement</a>
+                  <p></p>
+                  <p>An end-to-end differentiable pipeline for rendering sRGB images from raw inputs controlled by
+                    meaningful parameters.
+                  </p>
+                </td>
+              </tr>
+
               <!-- hsdepth -->
               <tr onmouseout="hsdepth_stop()" onmouseover="hsdepth_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
