@@ -86,6 +86,90 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <!-- paraharm -->
+              <tr onmouseout="paraharm_stop()" onmouseover="paraharm_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='paraharm_image'><img src='paraharm/after.jpg' width="100%"></div>
+                    <img src='paraharm/before.jpg' width="100%">
+                  </div>
+                  <script type="text/javascript">
+                    function paraharm_start() {
+                      document.getElementById('paraharm_image').style.opacity = "1";
+                    }
+                    function paraharm_stop() {
+                      document.getElementById('paraharm_image').style.opacity = "0";
+                    }
+                    paraharm_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="http://people.eecs.berkeley.edu/~kewang/sprih/">
+                    <papertitle>Semi-supervised Parametric Real-world Image Harmonization</papertitle>
+                  </a>
+                  <br>
+                  <a href="https://people.eecs.berkeley.edu/~kewang/">Ke Wang</a>,
+                  <a href="http://mgharbi.com/">Michaël Gharbi</a>,
+                  <a href="https://sites.google.com/site/hezhangsprinter/">He Zhang</a>,
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
+                  <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>
+                  <br>
+                  <em>CVPR</em>, 2023 <br>
+                  <a href="http://people.eecs.berkeley.edu/~kewang/sprih/">project page</a> /
+                  <a href="https://arxiv.org/abs/2303.00157">paper</a> /
+                  <!-- <a href="">code</a> -->
+                  <p></p>
+                  <p>A parametric harmonization method employing semi-supervised training to learn local
+                    appearance harmonization from unpaired real composites.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- diffrig -->
+              <tr onmouseout="diffrig_stop()" onmouseover="diffrig_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='diffrig_image'><video width=100% height=100% muted autoplay loop>
+                        <source src="diffrig/after.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src='diffrig/before.jpg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function diffrig_start() {
+                      document.getElementById('diffrig_image').style.opacity = "1";
+                    }
+
+                    function diffrig_stop() {
+                      document.getElementById('diffrig_image').style.opacity = "0";
+                    }
+                    diffrig_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://diffusionrig.github.io/">
+                    <papertitle>DiffusionRig: Learning Personalized Priors for Facial Appearance Editing</papertitle>
+                  </a>
+                  <br>
+                  Zheng Ding,
+                  <a href="https://ceciliavision.github.io/">Xuaner (Cecilia) Zhang</a>,
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
+                  <a href="https://lcjebe.github.io/">Lars Jebe</a>,
+                  <a href="https://pages.ucsd.edu/~ztu">Zhuowen Tu</a>,
+                  <a href="https://xiuming.info/">Xiuming Zhang</a>
+                  <br>
+                  <em>CVPR</em>, 2023 <br>
+                  <a href="https://diffusionrig.github.io/">project page</a> /
+                  <a href="https://arxiv.org/pdf/2304.06711.pdf">paper</a> /
+                  <a href="https://www.youtube.com/watch?v=6ZQbiNiJJEE">video</a> /
+                  <a href="https://github.com/adobe-research/diffusion-rig">code</a>
+                  <p></p>
+                  <p>A custom diffusion model that can "rig" the lighting, facial expression, and head pose in a
+                    portrait photo while maintaining identity and preserving high-frequency features.
+                  </p>
+                </td>
+              </tr>
+
               <!-- neuralisp -->
               <tr onmouseout="neuralisp_stop()" onmouseover="neuralisp_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -108,9 +192,16 @@
                     <papertitle>Neural Photo-Finishing</papertitle>
                   </a>
                   <br>
-                  Ethan Tseng, Yuxuan Zhang, Lars Jebe, Xuaner
-                  (Cecilia) Zhang, <strong><span style="font-size: 15px">Zhihao Xia</span></strong>, Yifei Fan,
-                  <br>FelixHeide*, Jiawen Chen*<br>
+                  <a href="https://ethan-tseng.github.io/">Ethan Tseng</a>,
+                  <a href="https://www.alexyuxuanzhang.com/">Yuxuan Zhang</a>,
+                  <a href="https://lcjebe.github.io/">Lars Jebe</a>,
+                  <a href="https://ceciliavision.github.io/">Xuaner (Cecilia) Zhang</a>,
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
+                  Yifei Fan,
+                  <br>
+                  <a href="https://www.cs.princeton.edu/~fheide/">Felix Heide</a>*,
+                  <a href="https://people.csail.mit.edu/jiawen/">Jiawen Chen</a>*
+                  <br>
                   <em>SIGGRAPH Asia</em>, 2022 <br>
                   <a href="https://light.princeton.edu/publication/neural-photo-finishing/">project page</a> /
                   <a href="https://openreview.net/pdf?id=a60XE_dEnuO">paper</a> /
@@ -145,8 +236,13 @@
                     <papertitle>Handheld Multi-Frame Neural Depth Refinement</papertitle>
                   </a>
                   <br>
-                  Ilya Chugunov, Yuxuan Zhang, <strong><span style="font-size: 15px">Zhihao Xia</span></strong>, Xuaner
-                  (Cecilia) Zhang, Jiawen Chen, Felix Heide<br>
+                  <a href="https://ilyac.info/">Ilya Chugunov</a>,
+                  <a href="https://www.alexyuxuanzhang.com/">Yuxuan Zhang</a>,
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
+                  <a href="https://ceciliavision.github.io/">Xuaner (Cecilia) Zhang</a>,
+                  <a href="https://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
+                  <a href="https://www.cs.princeton.edu/~fheide/">Felix Heide</a>,
+                  <br>
                   <em>CVPR</em>, 2022 &nbsp <font color=red><strong>(Oral Presentation)</strong></font> <br>
                   <a href="https://light.princeton.edu/publication/hndr/">project page</a> /
                   <a href="https://arxiv.org/abs/2111.13738">arxiv</a> /
@@ -179,9 +275,10 @@
                     <papertitle>A Dark Flash Normal Camera</papertitle>
                   </a>
                   <br>
-                  <strong><span style="font-size: 15px">Zhihao Xia</span></strong>,
-                  Jason Lawrence,
-                  Supreeth Achar <br>
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
+                  <a href="https://scholar.google.com/citations?user=c4XKzcIAAAAJ&hl">Jason Lawrence</a>,
+                  <a href="http://www.cs.cmu.edu/~sachar/">Supreeth Achar</a>
+                  <br>
                   <em>ICCV</em>, 2021 <br>
                   <a href="https://darkflashnormalpaper.github.io/">project page</a> /
                   <a href="https://arxiv.org/abs/2012.06125">arxiv</a> /
@@ -216,11 +313,12 @@
                     </papertitle>
                   </a>
                   <br>
-                  <strong><span style="font-size: 15px">Zhihao Xia</span></strong>,
-                  Micha&euml;l Gharbi,
-                  Federico Perazzi,
-                  Kalyan Sunkavalli,
-                  Ayan Chakrabarti <br>
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
+                  <a href="http://mgharbi.com/">Michaël Gharbi</a>,
+                  <a href="https://fperazzi.github.io/">Federico Perazzi</a>,
+                  <a href="https://www.kalyans.org/">Kalyan Sunkavalli</a>,
+                  <a href="https://projects.ayanc.org/">Ayan Chakrabarti</a>
+                  <br>
                   <em>CVPR</em>, 2021 <br>
                   <a href="https://likesum.github.io/deepfnf/">project page</a> /
                   <a href="https://arxiv.org/abs/2012.05116">arxiv</a> /
@@ -255,11 +353,11 @@
                     <papertitle>Basis Prediction Networks for Effective Burst Denoising with Large Kernels</papertitle>
                   </a>
                   <br>
-                  <strong><span style="font-size: 15px">Zhihao Xia</span></strong>,
-                  Federico Perazzi,
-                  Micha&euml;l Gharbi,
-                  Kalyan Sunkavalli,
-                  Ayan Chakrabarti <br>
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
+                  <a href="https://fperazzi.github.io/">Federico Perazzi</a>,
+                  <a href="http://mgharbi.com/">Michaël Gharbi</a>,
+                  <a href="https://www.kalyans.org/">Kalyan Sunkavalli</a>,
+                  <a href="https://projects.ayanc.org/">Ayan Chakrabarti</a> <br>
                   <em>CVPR</em>, 2020 <br>
                   <a href="https://likesum.github.io/bpn/">project page</a> /
                   <a href="https://arxiv.org/abs/1912.04421">arxiv</a> /
@@ -294,9 +392,10 @@
                     <papertitle>Generating and Exploiting Probabilistic Monocular Depth Estimates</papertitle>
                   </a>
                   <br>
-                  <strong><span style="font-size: 15px">Zhihao Xia</span></strong>,
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
                   Patrick Sullivan,
-                  Ayan Chakrabarti <br>
+                  <a href="https://projects.ayanc.org/">Ayan Chakrabarti</a>
+                  <br>
                   <em>CVPR</em>, 2020 &nbsp <font color=red><strong>(Oral Presentation)</strong></font> <br>
                   <a href="https://projects.ayanc.org/prdepth/">project page</a> /
                   <a href="https://arxiv.org/abs/1906.05739">arxiv</a> /
@@ -331,8 +430,9 @@
                     </papertitle>
                   </a>
                   <br>
-                  <strong><span style="font-size: 15px">Zhihao Xia</span></strong>,
-                  Ayan Chakrabarti <br>
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
+                  <a href="https://projects.ayanc.org/">Ayan Chakrabarti</a>
+                  <br>
                   <em>WACV</em>, 2020 <br>
                   <a href="https://projects.ayanc.org/rpcnn/">project page</a> /
                   <a href="https://arxiv.org/abs/1806.05229">arxiv</a> /
@@ -365,8 +465,9 @@
                     <papertitle>Training Image Estimators without Image Ground-Truth</papertitle>
                   </a>
                   <br>
-                  <strong><span style="font-size: 15px">Zhihao Xia</span></strong>,
-                  Ayan Chakrabarti <br>
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
+                  <a href="https://projects.ayanc.org/">Ayan Chakrabarti</a>
+                  <br>
                   <em>NeurIPS</em>, 2019 &nbsp <font color=#FF8080><strong>(Spotlight)</strong></font> <br>
                   <a href="https://projects.ayanc.org/unsupimg/">project page</a> /
                   <a href="https://arxiv.org/abs/1906.05775">arxiv</a> /
@@ -389,8 +490,8 @@
                     </papertitle>
                   </a>
                   <br>
-                  <strong><span style="font-size: 15px">Zhihao Xia</span></strong>,
-                  Yu Li,
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
+                  <a href="https://liyu95.com/">Yu Li</a>,
                   Bin Zhang,
                   Zhongxiao Li,
                   Yuhui Hu,
@@ -431,9 +532,10 @@
                     <papertitle>Efficient and accurate inversion of multiple scattering with deep learning</papertitle>
                   </a>
                   <br>
-                  Yu Sun,
-                  <strong><span style="font-size: 15px">Zhihao Xia</span></strong>,
-                  Ulugbek S. Kamilov <br>
+                  <a href="https://sunyumark.github.io/">Yu Sun</a>,
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
+                  <a href="https://cigroup.wustl.edu/ulugbek-s-kamilov/">Ulugbek S. Kamilov</a>
+                  <br>
                   <em>Optics Express</em>, 2018 <br>
                   <p></p>
                   <p>A deep convolutional neural network for image reconstruction under multiple light
