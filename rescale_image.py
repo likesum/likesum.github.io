@@ -2,8 +2,7 @@ import argparse
 import glob
 import os
 
-from PIL import Image
-from PIL import ImageChops
+from PIL import Image, ImageChops
 
 
 def trim(im):
@@ -33,6 +32,10 @@ if __name__ == '__main__':
       outputf = os.path.join(folder, '%s.jpg' % name)
 
       img = Image.open(inputf)
+
+      # # crop image
+      # img = img.crop((475, 1, 475 + 1072, 1072 + 1))
+
       if opts.t:
         img = trim(img)
       img = img.resize((opts.s, opts.s), Image.ANTIALIAS)

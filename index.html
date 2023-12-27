@@ -86,6 +86,97 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <!-- gen2res -->
+              <tr onmouseout="gen2res_stop()" onmouseover="gen2res_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='gen2res_image'>
+                      <video width=100% height=100% muted autoplay loop onloadedmetadata="this.playbackRate = 0.5;">
+                        <source src="gen2res/after.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src='gen2res/before.jpg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function gen2res_start() {
+                      document.getElementById('gen2res_image').style.opacity = "1";
+                    }
+
+                    function gen2res_stop() {
+                      document.getElementById('gen2res_image').style.opacity = "0";
+                    }
+                    gen2res_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://gen2res.github.io/">
+                    <papertitle>Restoration by Generation with Constrained Priors</papertitle>
+                  </a>
+                  <br>
+                  Zheng Ding,
+                  <a href="https://ceciliavision.github.io/">Xuaner (Cecilia) Zhang</a>,
+                  <a href="https://pages.ucsd.edu/~ztu">Zhuowen Tu</a>,
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>
+                  <br>
+                  <em>arXiv</em>, 2023 <br>
+                  <a href="https://gen2res.github.io/">project page</a>
+                  <!-- / -->
+                  <!-- <a href="https://arxiv.org/pdf/2304.06711.pdf">paper</a> -->
+                  <!-- <a href="https://www.youtube.com/watch?v=6ZQbiNiJJEE">video</a> / -->
+                  <!-- <a href="https://github.com/adobe-research/diffusion-rig">code</a> -->
+                  <p></p>
+                  <p>A method to directly apply a pre-trained diffusion model to blind image restoration, by
+                    constraining the generative space using a set of anchor images.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- burstsr -->
+              <tr onmouseout="burstsr_stop()" onmouseover="burstsr_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='burstsr_image'><img src='burstsr/after.jpg' width="100%"></div>
+                    <img src='burstsr/before.jpg' width="100%">
+                  </div>
+                  <script type="text/javascript">
+                    function burstsr_start() {
+                      document.getElementById('burstsr_image').style.opacity = "1";
+                    }
+
+                    function burstsr_stop() {
+                      document.getElementById('burstsr_image').style.opacity = "0";
+                    }
+                    burstsr_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a
+                    href="https://openaccess.thecvf.com/content/ICCV2023/html/Bhat_Self-Supervised_Burst_Super-Resolution_ICCV_2023_paper.html">
+                    <papertitle>Self-Supervised Burst Super-Resolution</papertitle>
+                  </a>
+                  <br>
+                  <a href="https://goutamgmb.github.io/">Goutam Bhat</a>,
+                  <a href="http://mgharbi.com/">Michaël Gharbi</a>,
+                  <a href="https://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
+                  <a
+                    href="https://ee.ethz.ch/the-department/faculty/professors/person-detail.OTAyMzM=.TGlzdC80MTEsMTA1ODA0MjU5.html">Luc
+                    Van Gool</a>,
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>
+                  <br>
+                  <em>ICCV</em>, 2023 <br>
+                  <!-- <a href="https://diffusionrig.github.io/">project page</a> / -->
+                  <a
+                    href="https://openaccess.thecvf.com/content/ICCV2023/papers/Bhat_Self-Supervised_Burst_Super-Resolution_ICCV_2023_paper.pdf">paper</a>
+                  <!-- / -->
+                  <!-- <a href="https://github.com/adobe-research/diffusion-rig">code</a> -->
+                  <p></p>
+                  <p>A self-supervised training strategy for burst super-resolution that only uses noisy low-resolution
+                    bursts during training.
+                  </p>
+                </td>
+              </tr>
+
               <!-- diffrig -->
               <tr onmouseout="diffrig_stop()" onmouseover="diffrig_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
