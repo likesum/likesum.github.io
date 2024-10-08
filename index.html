@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Zhihao Xia</title>
+  <title>Zhihao (Zach) Xia</title>
 
-  <meta name="author" content="Zhihao Xia">
+  <meta name="author" content="Zhihao (Zach) Xia">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -33,7 +33,7 @@
               <tr style="padding:0px">
                 <td style="padding:2.5%;width:63%;vertical-align:middle">
                   <p style="text-align:center">
-                    <name>Zhihao Xia</name>
+                    <name>Zhihao (Zach) Xia</name>
                   </p>
                   <p>I am a research scientist on <a href="http://graphics.stanford.edu/~levoy/">Marc Levoy</a>'s <a
                       href="https://www.theverge.com/2020/7/20/21331331/google-pixel-camera-app-lead-adobe-marc-levoy">computational
@@ -86,6 +86,93 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <!-- fixup -->
+              <tr onmouseout="fixup_stop()" onmouseover="fixup_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='fixup_image'><img src='fixup/after.jpg' width="100%"></div>
+                    <img src='fixup/before.jpg' width="100%">
+                  </div>
+                  <script type="text/javascript">
+                    function fixup_start() {
+                      document.getElementById('fixup_image').style.opacity = "1";
+                    }
+
+                    function fixup_stop() {
+                      document.getElementById('fixup_image').style.opacity = "0";
+                    }
+                    fixup_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://time-reversal.github.io/">
+                    <papertitle>Magic Fixup: Streamlining Photo Editing by Watching Dynamic Videos</papertitle>
+                  </a>
+                  <br>
+                  <a href="https://hadizayer.github.io/">Hadi AlZayer</a>,
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
+                  <a href="https://ceciliavision.github.io/">Xuaner Zhang</a>,
+                  <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>,
+                  <a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>,
+                  <a href="http://mgharbi.com/">Michaël Gharbi</a>
+                  <br>
+                  <em>Arxiv</em>, 2024 <br>
+                  <a href="https://magic-fixup.github.io/">project page</a>/
+                  <a href="https://arxiv.org/abs/2403.13044">paper</a>/
+                  <a href="https://github.com/adobe-research/MagicFixup">code</a>
+                  <p></p>
+                  <p>A generative model that, given a coarsely edited image, synthesizes a photorealistic output that
+                    follows the prescribed layout.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- inbetween -->
+              <tr onmouseout="inbetween_stop()" onmouseover="inbetween_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='inbetween_video'>
+                      <video width=100% height=100% muted loop playsinline>
+                        <source src="inbetween/after.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                  <script type="text/javascript">
+                    function inbetween_start() {
+                      document.getElementById('inbetween_video').getElementsByTagName('video')[0].play();
+                    }
+
+                    function inbetween_stop() {
+                      document.getElementById('inbetween_video').getElementsByTagName('video')[0].pause();
+                    }
+                    inbetween_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://time-reversal.github.io/">
+                    <papertitle>Explorative Inbetweening of Time and Space</papertitle>
+                  </a>
+                  <br>
+                  <a href="https://ps.is.mpg.de/person/hfeng">Haiwen Feng</a>,
+                  Zheng Ding,
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
+                  <a href="https://sniklaus.com/">Simon Niklaus</a>,
+                  <a href="https://is.mpg.de/~vabrevaya">Victoria Abrevaya</a>,
+                  <a href="https://ps.is.mpg.de/person/black">Michael J. Black</a>,
+                  <a href="https://ceciliavision.github.io/">Xuaner Zhang</a>
+                  <br>
+                  <em>ECCV</em>, 2024 <br>
+                  <a href="https://time-reversal.github.io/">project page</a>/
+                  <a href="https://arxiv.org/pdf/2312.17161.pdf">paper</a>/
+                  <a href="https://github.com/HavenFeng/time_reversal">code</a>
+                  <p></p>
+                  <p>Control pre-trained video generation models to synthesize arbitrary camera and subject motion based
+                    only on a given start and end frame.
+                  </p>
+                </td>
+              </tr>
+
               <!-- gen2res -->
               <tr onmouseout="gen2res_stop()" onmouseover="gen2res_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -115,15 +202,13 @@
                   </a>
                   <br>
                   Zheng Ding,
-                  <a href="https://ceciliavision.github.io/">Xuaner (Cecilia) Zhang</a>,
+                  <a href="https://ceciliavision.github.io/">Xuaner Zhang</a>,
                   <a href="https://pages.ucsd.edu/~ztu">Zhuowen Tu</a>,
                   <strong><span style="font-size: 14px">Zhihao Xia</span></strong>
                   <br>
                   <em>CVPR</em>, 2024 <br>
                   <a href="https://gen2res.github.io/">project page</a>/
                   <a href="https://arxiv.org/pdf/2312.17161.pdf">paper</a>
-                  <!-- <a href="https://www.youtube.com/watch?v=6ZQbiNiJJEE">video</a> / -->
-                  <!-- <a href="https://github.com/adobe-research/diffusion-rig">code</a> -->
                   <p></p>
                   <p>A method to directly apply a pre-trained diffusion model to blind image restoration, by
                     constraining the generative space using a set of anchor images.
@@ -203,7 +288,7 @@
                   </a>
                   <br>
                   Zheng Ding,
-                  <a href="https://ceciliavision.github.io/">Xuaner (Cecilia) Zhang</a>,
+                  <a href="https://ceciliavision.github.io/">Xuaner Zhang</a>,
                   <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
                   <a href="https://lcjebe.github.io/">Lars Jebe</a>,
                   <a href="https://pages.ucsd.edu/~ztu">Zhuowen Tu</a>,
@@ -285,7 +370,7 @@
                   <a href="https://ethan-tseng.github.io/">Ethan Tseng</a>,
                   <a href="https://www.alexyuxuanzhang.com/">Yuxuan Zhang</a>,
                   <a href="https://lcjebe.github.io/">Lars Jebe</a>,
-                  <a href="https://ceciliavision.github.io/">Xuaner (Cecilia) Zhang</a>,
+                  <a href="https://ceciliavision.github.io/">Xuaner Zhang</a>,
                   <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
                   Yifei Fan,
                   <br>
@@ -329,7 +414,7 @@
                   <a href="https://ilyac.info/">Ilya Chugunov</a>,
                   <a href="https://www.alexyuxuanzhang.com/">Yuxuan Zhang</a>,
                   <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
-                  <a href="https://ceciliavision.github.io/">Xuaner (Cecilia) Zhang</a>,
+                  <a href="https://ceciliavision.github.io/">Xuaner Zhang</a>,
                   <a href="https://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
                   <a href="https://www.cs.princeton.edu/~fheide/">Felix Heide</a>,
                   <br>
