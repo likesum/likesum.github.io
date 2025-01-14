@@ -35,11 +35,12 @@
                   <p style="text-align:center">
                     <name>Zhihao (Zach) Xia</name>
                   </p>
-                  <p>I am a research scientist on <a href="http://graphics.stanford.edu/~levoy/">Marc Levoy</a>'s <a
-                      href="https://www.theverge.com/2020/7/20/21331331/google-pixel-camera-app-lead-adobe-marc-levoy">computational
-                      photography team</a> at <a href="https://www.adobe.com/">Adobe</a>, where I work on computer
-                    vision, computational photography and machine learning.
+                  <p>I work on problems in photography, video and generative AI. 
                   </p>
+                  <p>I was a research scientist on <a href="http://graphics.stanford.edu/~levoy/">Marc Levoy</a>'s team at <a href="https://www.adobe.com/">Adobe</a>, where we developed <a href="https://blog.adobe.com/en/publish/2024/10/14/the-adobe-adaptive-profile">AI-first</a> 
+                    <a href="https://www.dpreview.com/articles/9805565494/adobe-denoise-brings-photoshop-lightroom-nr-into-the-modern-era">features</a> for photographers and were building a 
+                    <a href="https://www.theverge.com/2020/7/20/21331331/google-pixel-camera-app-lead-adobe-marc-levoy">camera app</a> leveraging computational photography.
+                </p>
                   <p>I received my PhD from <a href="https://wustl.edu/">WashU</a> advised by <a
                       href="https://projects.ayanc.org/">Ayan Chakrabarti</a>. Prior to WashU, I got my Bachelors from
                     <a href="http://en.scgy.ustc.edu.cn/">School of the Gifted Young</a> at <a
@@ -48,12 +49,8 @@
                       Research</a>, <a href="http://www.nus.edu.sg/">NUS</a> and <a
                       href="https://www.kaust.edu.sa/">KAUST</a>.
                   </p>
-                  <p><strong><span style="font-size: 15px">Internships:</span></strong> I'm always happy to host
-                    research interns at Adobe. If you are interested in interning with me, please send me an
-                    email describing your past experience and current research interests.
-                  </p>
                   <p align=center>
-                    <a href="mailto:zxia@ad**e.com">Email</a> &nbsp/&nbsp
+                    <a href="mailto:zhi***.zach.xia@gmail.com">Email</a> &nbsp/&nbsp
                     <a href="https://likesum.github.io/cv/cv.pdf">CV</a> &nbsp/&nbsp
                     <a href="https://scholar.google.com/citations?hl=en&user=Rc4ZMCEAAAAJ">Google Scholar</a>&nbsp/&nbsp
                     <a href="https://github.com/likesum">GitHub</a>
@@ -71,12 +68,12 @@
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>Research</heading>
-                  <p>
+                  <!-- <p>
                     My research interests include computer vision, computational photography and deep learning. I am
                     particularly interested in the design of accurate and efficient algorithms for visual inference ---
                     reasoning different aspects of visual appearance (geometry, light, colors, etc) from images and
                     videos.
-                  </p>
+                  </p> -->
                 </td>
               </tr>
             </tbody>
@@ -85,6 +82,81 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+
+              <!-- instructmove -->
+              <tr onmouseout="instructmove_stop()" onmouseover="instructmove_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='instructmove_image'><img src='instruct_move/after.jpg' width="100%"></div>
+                    <img src='instruct_move/before.jpg' width="100%">
+                  </div>
+                  <script type="text/javascript">
+                    function instructmove_start() {
+                      document.getElementById('instructmove_image').style.opacity = "1";
+                    }
+
+                    function instructmove_stop() {
+                      document.getElementById('instructmove_image').style.opacity = "0";
+                    }
+                    instructmove_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://ljzycmd.github.io/projects/InstructMove/">
+                    <papertitle>Instruction-based Image Manipulation by Watching How Things Move</papertitle>
+                  </a>
+                  <br>
+                  <a href="https://github.com/ljzycmd">Mingdeng Cao</a>,
+                  <a href="https://ceciliavision.github.io/">Xuaner Zhang</a>,
+                  <a href="https://scholar.google.com/citations?user=JD-5DKcAAAAJ">Yinqiang Zheng</a>,
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>
+                  <br>
+                  <em>Arxiv</em>, 2024 <br>
+                  <a href="https://ljzycmd.github.io/projects/InstructMove/">project page</a>/
+                  <a href="https://arxiv.org/abs/2412.12087">paper</a>
+                  <p></p>
+                  <p>An instruction-based image editing model trained on frame pairs from videos with instructions generated by Multimodal LLMs.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- lediff -->
+              <tr onmouseout="lediff_stop()" onmouseover="lediff_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='lediff_image'><img src='lediff/after.jpg' width="100%"></div>
+                    <img src='lediff/before.jpg' width="100%">
+                  </div>
+                  <script type="text/javascript">
+                    function lediff_start() {
+                      document.getElementById('lediff_image').style.opacity = "1";
+                    }
+
+                    function lediff_stop() {
+                      document.getElementById('lediff_image').style.opacity = "0";
+                    }
+                    lediff_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://lediff.mpi-inf.mpg.de/">
+                    <papertitle>LEDiff: Latent Exposure Diffusion for HDR Generation</papertitle>
+                  </a>
+                  <br>
+                  <a href="https://hans1984.github.io/">Chao Wang</a>,
+                  <strong><span style="font-size: 14px">Zhihao Xia</span></strong>,
+                  <a href="https://people.mpi-inf.mpg.de/~tleimkue/">Thomas Leimkühler</a>,
+                  <a href="https://people.mpi-inf.mpg.de/~karol/">Karol Myszkowski</a>,
+                  <a href="https://ceciliavision.github.io/">Xuaner Zhang</a>
+                  <br>
+                  <em>Arxiv</em>, 2024 <br>
+                  <a href="https://lediff.mpi-inf.mpg.de/">project page</a>/
+                  <a href="https://arxiv.org/abs/2412.14456">paper</a>
+                  <p></p>
+                  <p>A method that enables generating HDR content through latent space fusion inspired by image-space exposure fusion techniques.
+                  </p>
+                </td>
+              </tr>
 
               <!-- fixup -->
               <tr onmouseout="fixup_stop()" onmouseover="fixup_start()">
@@ -105,7 +177,7 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://time-reversal.github.io/">
+                  <a href="https://magic-fixup.github.io/">
                     <papertitle>Magic Fixup: Streamlining Photo Editing by Watching Dynamic Videos</papertitle>
                   </a>
                   <br>
